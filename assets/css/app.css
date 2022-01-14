@@ -391,7 +391,6 @@ body {
   background-image: url("../img/service/bg.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 500px;
 }
 .service .text-heading {
   max-width: 744px;
@@ -401,11 +400,12 @@ body {
 }
 .service .title {
   font-size: 24px;
-  padding-top: 40px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   font-weight: 500;
   color: #222222;
   position: relative;
-  display: initial;
+  display: inline-block;
 }
 .service .title span {
   font-weight: 900;
@@ -423,6 +423,8 @@ body {
 
 .service-item {
   display: flex;
+  align-items: center;
+  margin-top: 30px;
 }
 .service-item .icon {
   flex-shrink: 0;
@@ -430,6 +432,27 @@ body {
   height: 65px;
   background: #AD0316;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-item .icon img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.service-item .body {
+  color: #222222;
+  margin-left: 11px;
+}
+.service-item p {
+  margin: 0;
+  line-height: 19px;
+  font-weight: 500;
+}
+.service-item span {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=app.css.map */
