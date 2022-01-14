@@ -1,0 +1,196 @@
+.profile{
+    padding-top: 45px;
+    margin-top: -70px;
+    background-image: url("../img/bg-profile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 80px;
+    .text-heading{
+        text-align: center;
+        max-width: 889px;
+        margin: 0 auto;
+        font-size: 24px;
+        position: relative;
+        
+        @include fw-700;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 224px;
+            height: 2px;
+            background: #FF545F;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+.profile-top{
+    margin-top: 50px;
+    margin-bottom: 80px;
+    .item{
+        // width: 200px;
+        margin: 0 auto;
+        text-align: center;
+        p{
+            font-family: "Montserrat";
+            font-size: 36px;
+            @include fw-700;
+        }
+        span{
+            text-transform: uppercase;
+            margin-top: 24px;
+            display: block;
+            font-size: 18px;
+            @include fw-700;
+        }
+    }
+    .icon{
+        border: 1px solid #c4c4c4;
+        border-radius: 50%;
+        width: 136px;
+        height: 136px;
+        margin: 0 auto;
+        padding: 16px;
+    }
+    .icon-img{
+        width: 102px;
+        height: 102px;
+        background: $pink-drank;
+        border-radius: 50%;
+        position: relative;
+        img{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+}
+.profile-bottom{
+    
+    position: relative;
+    &--container{
+        border-radius: 40px;
+        // height: 500px;
+        background: #F6F2F7;
+        padding-top: 28px;
+        padding-bottom: 28px;
+      
+
+    }
+    .title{
+        text-align: center;
+        font-size: 24px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 12px 34px;
+        background: $pink-gradient;
+        border-radius: 40px;
+        color: $white;
+        @include fw-700;
+    }
+}
+.position-img{
+    height: 261px;
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.item-position{
+    width: 212px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    .logo {
+        width: 69px;
+        height: 69px;
+        background: $white;
+        border: 3px solid rgba($color: $text-pink, $alpha: 0.5);
+        border-radius: 50%;
+        padding: 3px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%,50%);
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    span{
+        margin-top: 40px;
+        display: block;
+        text-align: center;
+        height: 52px;
+        line-height: 17px;
+        @include text-truncate(3);
+    }
+}
+.portrait{
+    background-image: url("../img/position/bg-portrait.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 18px;
+    height: 100%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+    .occ{
+        font-size: 14px;
+        color: $black-22;
+        text-align: center;
+    }
+    .name{
+        text-align: center;
+        font-size: 20px;
+        text-transform: uppercase;
+        @include fw-900;
+    }
+    img{
+        height: 90%;
+    }
+}
+.service{
+    background-image: url("../img/service/bg.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 500px;
+    .text-heading{
+        max-width: 744px;
+        font-size: 30px;
+        line-height: 35px;
+        
+        @include fw-700;
+    }
+    .title{
+        font-size: 24px;
+        padding-top: 40px;
+        @include fw-500;
+        color: $black-22;
+        position: relative;
+        display: initial;
+        span{
+            @include fw-800;
+            color: $text-pink;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            width: 70%;
+            height: 2px;
+            background: $text-pink;
+            bottom: -9px;
+            left: 0;
+        }
+    }
+}
+.service-item{
+    display: flex;
+    .icon{
+        flex-shrink: 0;
+        width: 65px;
+        height: 65px;
+        background: $pink-drank;
+        border-radius: 50%;
+    }
+}
